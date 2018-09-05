@@ -360,7 +360,29 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 #msg_input.disabled, #msg_input.ql-disabled { background-color: #363636; border-color: #363636; color: #949494; }
 
-#msg_input_message { background-color: #363636; color: #e6e6e6; }
+#message_input { background: #545454; border-color: #424242; color: #e6e6e6; }
+
+#message_input::-webkit-input-placeholder { color: #e6e6e6 !important; -webkit-filter: none; filter: none; opacity: 0.5; }
+
+#message_input::-moz-placeholder { color: #e6e6e6 !important; filter: none; opacity: 0.5; }
+
+#message_input::placeholder { color: #e6e6e6 !important; filter: none; opacity: 0.5; }
+
+#message_input[data-placeholder]:empty::before { color: #e6e6e6 !important; }
+
+#message_input:focus, #message_input.focus { border-color: #363636; }
+
+#message_input:focus + #primary_file_button:not(:hover):not(.active), #message_input.focus + #primary_file_button:not(:hover):not(.active) { border-color: #363636; }
+
+#message_input + #primary_file_button:not(:hover):not(.active) { border-color: #424242; }
+
+#message_input + #primary_file_button.focus-ring:not(:hover):not(.active) { border-color: #424242; }
+
+#message_input.offline:not(.pretend-to-be-online) { background-color: #363636 !important; color: #949494; }
+
+#message_input.disabled, #message_input.ql-disabled { background-color: #363636; border-color: #363636; color: #949494; }
+
+#message_input_message { background-color: #363636; color: #e6e6e6; }
 
 #primary_file_button { background: padding-box #545454; border-color: #424242; color: #949494; }
 
